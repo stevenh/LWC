@@ -44,7 +44,7 @@ public class Updater {
 	/**
 	 * URL to the base update site
 	 */
-	private final static String UPDATE_SITE = "https://github.com/Hidendra/LWC/raw/master/";
+	private final static String UPDATE_SITE = "https://github.com/stevenh/LWC/raw/hmod/";
 	
 	/**
 	 * File used to obtain the latest version
