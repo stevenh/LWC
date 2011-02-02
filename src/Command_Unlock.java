@@ -2,7 +2,6 @@ import com.griefcraft.model.Entity;
 import com.griefcraft.model.EntityTypes;
 
 import static com.griefcraft.util.StringUtils.*;
-import static com.griefcraft.util.StringUtils.*;
 
 public class Command_Unlock implements Command {
 

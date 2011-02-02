@@ -28,6 +28,8 @@ import com.griefcraft.LWCInfo;
 import com.griefcraft.logging.Logger;
 
 public class Config extends Properties {
+	
+	static final long serialVersionUID = -1L;
 
 	/**
 	 * Destroy the config instance

@@ -25,7 +25,6 @@ import com.griefcraft.model.EntityTypes;
 import com.griefcraft.model.RightTypes;
 import com.griefcraft.sql.MemDB;
 import com.griefcraft.sql.PhysDB;
-import com.griefcraft.util.Performance;
 
 public class LWCListener extends PluginListener {
 

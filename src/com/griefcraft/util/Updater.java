@@ -32,8 +32,6 @@ import java.util.List;
 import com.griefcraft.LWCInfo;
 import com.griefcraft.logging.Logger;
 
-import static com.griefcraft.util.ConfigValues.AUTO_UPDATE;
-
 public class Updater {
 
 	/**

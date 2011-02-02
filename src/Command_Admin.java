@@ -17,11 +17,7 @@
 
 import static com.griefcraft.util.StringUtils.hasFlag;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import com.griefcraft.util.Performance;
-import com.griefcraft.util.Updater;
 
 public class Command_Admin implements Command {
 
