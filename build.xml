@@ -1,0 +1,31 @@
+<project name="build" basedir="." default="compile">
+	<property name="compiler.deprecation" value="on"/>
+	<property name="compile.debug" value="false"/>
+	<property name="compile.optimize" value="true"/>
+	<property name="build.targetdir" value="dist"/>
+	<property name="build.target" value="${build.targetdir}/LWC.jar"/>
+
+    <path id="classpath">
+        <fileset dir="../server/" includes="*.jar"/>
+    </path>
+    <target name="clean">
+		<delete dir="build"/>
+        <delete file="${build.target}"/>
+    </target>
+    <target name="compile">
+        <mkdir dir="build"/>
+        <javac srcdir="src" destdir="build" classpathref="classpath" includeantruntime="false">
+			<compilerarg value="-Xlint:deprecation"/>
+			<compilerarg value="-Xlint:unchecked"/>
+		</javac>
+    </target>
+
+    <target name="jar" depends="compile" description="Create JAR for the plugin">
+        <mkdir dir="${build.targetdir}"/>
+        <jar destfile="${build.target}">
+            <fileset dir="build"/>
+            <manifest>
+            </manifest>
+        </jar>
+    </target>
+</project>
