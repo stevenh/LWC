@@ -25,6 +25,7 @@
         <jar destfile="${build.target}">
             <fileset dir="build"/>
             <manifest>
+				<attribute name="Class-Path" value="../lib/sqlite.jar"/>
             </manifest>
         </jar>
     </target>
