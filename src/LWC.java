@@ -208,8 +208,8 @@ public class LWC extends Plugin {
 			Config.init();
 
 			updater = new Updater();
-			updater.check();
-			updater.update();
+			//updater.check();
+			//updater.update();
 			
 			if(ConfigValues.AUTO_UPDATE.getBool()) {
 				if(updater.checkDist()) {
@@ -220,8 +220,8 @@ public class LWC extends Plugin {
 			}
 
 			log("LWC config:      " + LWCInfo.CONF_FILE);
-			log("SQLite jar:      lib/sqlite.jar");
-			log("SQLite library:  lib/" + updater.getOSSpecificFileName());
+			//log("SQLite jar:      lib/sqlite.jar");
+			//log("SQLite library:  lib/" + updater.getOSSpecificFileName());
 			log("DB location:     " + physicalDatabase.getDatabasePath());
 
 			log("Opening sqlite databases");
